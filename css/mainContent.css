@@ -1,0 +1,6 @@
+.mainContent {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  background-color: hsl(214, 32%, 91%);
+  z-index: 10;
+}

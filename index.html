@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/mainContent.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="header-topRow">
+          <div class="searchInput">
+            <img
+              class="searchInput-icon"
+              width="25px"
+              height="25px"
+              src="./img/magnify.svg"
+              alt=" a magnifying glass"
+            />
+            <input
+              class="searchInput-textField"
+              type="text"
+              name="search"
+              id="search-bar"
+            />
+          </div>
+          <div class="header-topRowRightSide">
+            <img
+              class="header-notificationIcon"
+              src="./img/bell-ring-outline.svg"
+              alt="a bell ringing"
+              width="25px"
+              height="25px"
+            />
+            <img
+              width="35px"
+              height="35px"
+              class="header-avatarPic"
+              src="./img/chair-at-night.jpg"
+              alt="avatar picture"
+            />
+
+            <div class="header-user">
+              <span class="header-fName">Morgan </span
+              ><span class="header-lName">Oakley</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottomRow">
+          <div class="header-bottomRowLeftSide">
+            <img
+              width="75px"
+              height="75px"
+              src="./img/chair-at-night.jpg"
+              alt="avatar picture"
+              class="header-avatarPic header-avatarPic--large"
+            />
+            <div class="header-greeting">
+              <p class="header-greeting-msg">Hi there,</p>
+              <p class="header-userContainer">
+                <span class="header-fName">Morgan</span>
+                <span class="header-lName">Oakley</span>
+                <span class="header-userHandler">(@morgan)</span>
+              </p>
+            </div>
+          </div>
+          <div class="header-bottomRowRightSide">
+            <button class="header-button">New</button>
+            <button class="header-button">Upload</button>
+            <button class="header-button">Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar"></div>
+      <div class="mainContent"></div>
+    </div>
+  </body>
+</html>

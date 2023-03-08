@@ -1,0 +1,4 @@
+.sidebar {
+  grid-row: 1 / span 2;
+  background-color: var(--primary-color);
+}
