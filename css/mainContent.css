@@ -1,3 +1,7 @@
+:root {
+  --grid-gap-size: 1.5rem;
+}
+
 .mainContent {
   grid-column: 2;
   grid-row: 2 / span 2;
@@ -5,11 +9,67 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   z-index: 10;
-  padding: 2rem 0 0 1rem;
+  padding: 2rem 1.5rem 4rem;
+  gap: var(--grid-gap-size);
 }
 
 .mainContent-projects {
   grid-row: 1 / span 2;
+}
+
+.mainContent-projectsHeading {
+  margin-bottom: 0.75rem;
+}
+
+.mainContent-projectsCardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--grid-gap-size);
+  height: 806px;
+}
+
+.mainContent-projectsCard {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem 1rem 1.5rem;
+  border-radius: 6px;
+  border-left: 8px solid var(--primary-color);
+  box-shadow: 6px 6px 6px hsl(60, 2%, 80%);
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+}
+
+.mainContent-projectsCardText {
+  color: hsl(0, 1%, 28%);
+  margin-bottom: 1rem;
+}
+
+.mainContent-projectsCardButtonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainContent-projectsCardButton {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+  border-style: none;
+  background-color: inherit;
+  width: 25px;
+  height: 25px;
+  margin-left: 2rem;
+}
+
+.mainContent-projectsCardButton--star {
+  background-image: url(../img/star-icon.svg);
+}
+
+.mainContent-projectsCardButton--eye {
+  background-image: url(../img/eye-icon.svg);
+}
+
+.mainContent-projectsCardButton--share {
+  background-image: url(../img/share-icon.svg);
 }
 
 .mainContent-announcements {
