@@ -1,4 +1,47 @@
 .sidebar {
   grid-row: 1 / span 2;
   background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 700;
+  padding: 1rem 0 0 1rem;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.sidebar-titleText {
+  font-size: 2rem;
+}
+
+.sidebar-titleIcon {
+  margin-right: 0.72rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-itemIcon {
+  margin-right: 1.5rem;
+  margin-left: 0.75rem;
+}
+
+.sidebar-itemText {
+  font-size: 1.5rem;
+}
+
+.sidebar-itemIcon[src='./img/messages-icon.svg'] {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.sidebar-mainGroup {
+  margin-bottom: 3rem;
 }
