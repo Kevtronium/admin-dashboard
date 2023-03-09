@@ -2,5 +2,16 @@
   grid-column: 2;
   grid-row: 2 / span 2;
   background-color: hsl(214, 32%, 91%);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   z-index: 10;
+  padding: 2rem 0 0 1rem;
+}
+
+.mainContent-projects {
+  grid-row: 1 / span 2;
+}
+
+.mainContent-announcements {
+  grid-column: 2 / span 1;
 }
