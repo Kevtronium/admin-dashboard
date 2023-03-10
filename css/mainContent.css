@@ -1,5 +1,7 @@
 :root {
   --grid-gap-size: 1.5rem;
+  --secondary-text-color: hsl(0, 1%, 28%);
+  --box-shadow-default: 6px 6px 6px hsl(60, 2%, 80%);
 }
 
 .mainContent {
@@ -8,10 +10,14 @@
   background-color: hsl(214, 32%, 91%);
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   z-index: 10;
-  padding: 2rem 1.5rem 4rem;
-  gap: var(--grid-gap-size);
+  padding: 2rem 2rem 2.5rem 1.5rem;
+  column-gap: var(--grid-gap-size);
+  row-gap: 2.5rem;
 }
+
+/* Projects */
 
 .mainContent-projects {
   grid-row: 1 / span 2;
@@ -25,7 +31,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--grid-gap-size);
-  height: 806px;
+  height: 750px;
 }
 
 .mainContent-projectsCard {
@@ -39,7 +45,7 @@
 }
 
 .mainContent-projectsCardText {
-  color: hsl(0, 1%, 28%);
+  color: var(--secondary-text-color);
   margin-bottom: 1rem;
 }
 
@@ -72,6 +78,36 @@
   background-image: url(../img/share-icon.svg);
 }
 
+/* Announcements */
+
 .mainContent-announcements {
   grid-column: 2 / span 1;
+}
+
+.mainContent-announcementsHeading {
+  margin-bottom: 0.75rem;
+}
+
+.mainContent-announcementsCard {
+  background-color: white;
+  padding: 2rem 1.75rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-default);
+}
+
+.mainContent-annoucementsCardItem {
+  padding-left: 0.25rem;
+}
+
+.mainContent-announcementsCardItemTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.mainContent-announcementsCardItemText {
+  color: var(--secondary-text-color);
+}
+
+.mainContent-announcements hr {
+  margin: 1rem 0 1.5rem;
 }
