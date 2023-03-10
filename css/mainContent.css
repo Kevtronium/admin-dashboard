@@ -106,8 +106,43 @@
 
 .mainContent-announcementsCardItemText {
   color: var(--secondary-text-color);
+  font-size: 1rem;
 }
 
 .mainContent-announcements hr {
   margin: 1rem 0 1.5rem;
+}
+
+/* Trending */
+.mainContent-trendingHeading {
+  margin-bottom: 0.75rem;
+}
+
+.mainContent-trendingCard {
+  background-color: white;
+  box-shadow: var(--box-shadow-default);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  height: 272px;
+}
+
+.mainContent-trendingCardItem {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent-trendingCardItemAvatar {
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.mainContent-trendingCardItemUserHandler {
+  font-weight: 700;
+}
+
+.mainContent-trendingCardItemUserDescription {
+  color: var(--secondary-text-color);
 }
